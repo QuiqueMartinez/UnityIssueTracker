@@ -25,5 +25,5 @@ Thumbs.db
 *.bak
 
 # Ignore archivos de Unity no necesarios para el paquete
-*.meta
+!*.meta
 *.unitypackage
