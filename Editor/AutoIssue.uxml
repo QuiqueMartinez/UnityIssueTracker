@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements">
+    <ui:VisualElement>
+        <!-- Encabezados de las columnas -->
+        <ui:VisualElement class="header-row">
+            <ui:Label text="Priority" class="header-label" />
+            <ui:Label text="Tag" class="header-label" />
+            <ui:Label text="Status" class="header-label" />
+            <ui:Label text="Description" class="header-label" />
+        </ui:VisualElement>
+
+        <!-- Contenedor de la lista de issues -->
+        <ui:ScrollView name="issuesList" class="issues-list">
+            <!-- Los elementos de los issues se cargarán dinámicamente -->
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

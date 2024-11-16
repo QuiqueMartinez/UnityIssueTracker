@@ -1,0 +1,29 @@
+# Ignore archivos y carpetas generados automáticamente
+.DS_Store
+Thumbs.db
+
+# Ignore archivos relacionados con editores de texto
+*.log
+*.suo
+*.user
+*.userprefs
+*.tmp
+*.swp
+*.idea
+*.vscode
+.vs/
+
+# Ignore configuraciones de compilación específicas del sistema
+*.vcxproj
+*.csproj
+*.pidb
+*.unityproj
+*.sln
+*.sln.met
+*.apk
+*.exe
+*.bak
+
+# Ignore archivos de Unity no necesarios para el paquete
+*.meta
+*.unitypackage
