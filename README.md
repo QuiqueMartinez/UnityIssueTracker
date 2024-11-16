@@ -1,7 +1,7 @@
 # Unity Issue Tracker
 
 **Unity Issue Tracker** is a Unity package designed to analyze and manage issues directly from the Unity Editor. It provides a streamlined way for developers to track problems, pending tasks, and areas for improvement in their code. 
-The main motivation is that the typical TODO list does not reference the exact class or method in the code. This tool can be useful for code maintainance.
+The main motivation is that the typical TODO list does not reference the exact class or method in the code. This tool can be useful for code maintenance.
 
 ---
 
@@ -40,9 +40,9 @@ Add the following entry to your project's `Packages/manifest.json` file:
 ### Assembly
 - The issue tracker uses its own assembly. If using option 3, this file can be skipped making the functionality accessible to the main assembly. 
 
-###Usage
+### Usage
 
-##0. Create the issues
+## 0. Create the issues
 
 Issues are attributes associated with classes and methods.
 ```csharp
@@ -67,32 +67,32 @@ The available labels are listed in the table (can be easily edited).
 |           | REVAMP    |           |
 |           | SMELL     |           |
 
-##1. Open the Editor Window
+## 1. Open the Editor Window
 Go to Window > Issue Tracker in the Unity Editor menu.
 The Issue Tracker window will open, displaying the current list of issues.
 ![Issue tracker window](Documentation~/images/IssueTracker.png)
 
-##2. Scan for Issues
+## 2. Scan for Issues
 Click the Scan button in the Editor window to analyze your codebase.
 The tool will detect all attributes marked with IssueAttribute and populate the list.
 The yellow indicates that the issue list might have changed after a compilation.
 
-##3. View and Manage Issues
+## 3. View and Manage Issues
 Issues are displayed with details such as priority, status, and description.
 The filters refine the displayed list by tags, priority, or status.
 
-##4. Requirements
+## 4. Requirements
 Made for Unity 6 or later
 Compatible with Windows, macOS, and Linux
 
-##5. Limitations
+## 5. Limitations
 - Only opens the file in VS, can not go to the exact line of code.
 
-##6. Planned improvements
+## 6. Planned improvements
 - Filter by tag, priority, or status.
 - Order.
 - Group by assembly.	
 - Scan only the specified assembly list.
 
-##5. License and Disclaimer
+## 7. License and Disclaimer
 This package is distributed under the Unlicense, which allows you to freely use, modify, and distribute the code. However, no warranty of any kind is provided, and the author takes no responsibility for any issues, damages, or consequences arising from its use. There is no guarantee of maintenance, updates, or support for this package. Use it at your own risk.
