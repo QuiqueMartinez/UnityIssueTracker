@@ -22,33 +22,39 @@ Add the following entry to your project's `Packages/manifest.json` file:
 ```json
 {
     "dependencies": {
-        "com.yourname.issue-tracker": "https://github.com/yourname/unity-issue-tracker.git"
+    ...
+    "com.quiquemartinez.unity-issue-tracker": "https://github.com/QuiqueMartinez/UnityIssueTracker.git",
+    ...
     }
-}```
+}
+```
+
 ### Option 2: Install from a local folder
 - Clone the repository or download it as a ZIP file.
 - Move the package folder to a location outside your project.
 - Add the package as a local dependency in manifest.json:
 
-### Option3: Copy the package files directly in your project
-- Copy all the Editor and Runtime directories with their content into any folder under Assets in yout project.
+### Option3: Copy the package files directly into your project
+- Copy all the Editor and Runtime directories with their content into any folder under Assets in your project.
 
 ### Assembly
-- The issue tracker uses its owm assembly. If using the option 3, this file can be skipped making the functionality accessible to the main assembly. 
+- The issue tracker uses its own assembly. If using option 3, this file can be skipped making the functionality accessible to the main assembly. 
 
 ###Usage
 
 ##0. Create the issues
 
-Issues are attribites associated to classes and methods.
+Issues are attributes associated with classes and methods.
 ```csharp
         [AutoIssue.Issue(
         Priority = AutoIssue.Priority.High,
         Tag = AutoIssue.Tag.TODO,
         Description = "Tutorial connector service.")]
+	// Your class or method here
+```
 		```
 
-The available lablels are listed in the table (can be easily edited).
+The available labels are listed in the table (can be easily edited).
 
 | Priority  |    Tag    |  Status   |
 |-----------|-----------|-----------|
@@ -69,21 +75,21 @@ The Issue Tracker window will open, displaying the current list of issues.
 ##2. Scan for Issues
 Click the Scan button in the Editor window to analyze your codebase.
 The tool will detect all attributes marked with IssueAttribute and populate the list.
-Yellow color indicates the agter a compile, the issue list might have changed.
+The yellow indicates that the issue list might have changed after a compilation.
 
 ##3. View and Manage Issues
 Issues are displayed with details such as priority, status, and description.
-Use the filters to refine the displayed list by tags, priority, or status.
+The filters refine the displayed list by tags, priority, or status.
 
 ##4. Requirements
 Made for Unity 6 or later
 Compatible with Windows, macOS, and Linux
 
 ##5. Limitations
-- Can not go the the exact linbe of code, only opens the file in VS.
+- Only opens the file in VS, can not go to the exact line of code.
 
 ##6. Planned improvements
-- Filter by tag, priority or status.
+- Filter by tag, priority, or status.
 - Order.
 - Group by assembly.	
 - Scan only the specified assembly list.
