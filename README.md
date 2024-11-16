@@ -70,7 +70,7 @@ The available labels are listed in the table (can be easily edited).
 ## 1. Open the Editor Window
 Go to Window > Issue Tracker in the Unity Editor menu.
 The Issue Tracker window will open, displaying the current list of issues.
-![Issue tracker window](Documentation~/images/IssueTracker.png)
+![Issue tracker window](Documentation~/IssueTracker.png)
 
 ## 2. Scan for Issues
 Click the Scan button in the Editor window to analyze your codebase.
